@@ -20,6 +20,7 @@
   "homepage": "https://github.com/matou-de-lune/VirtualKeyboard#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.4",
     "css-loader": "^6.7.1",
     "eslint": "^8.15.0",
     "eslint-config-airbnb-base": "^15.0.0",

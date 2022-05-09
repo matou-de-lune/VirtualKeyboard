@@ -1,0 +1,8 @@
+.keyboard {
+  border-radius: 5px;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: $keyboard-color;
+}

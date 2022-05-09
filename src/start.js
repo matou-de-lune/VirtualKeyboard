@@ -28,6 +28,7 @@ export default function startKeyboard(lang) {
   inform.append(langCh);
 
   const text = document.createElement('textarea');
+  text.textContent = '';
   wrapper.append(text);
 
   const keyInfo = document.createElement('div');

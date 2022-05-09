@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 	context: path.resolve(__dirname, 'src'),
@@ -26,6 +27,14 @@ module.exports = {
 		}),
 		new ESLintPlugin({
 			failOnError: false,
+		}),
+		new CopyWebpackPlugin({
+			patterns: [
+				{
+					from: path.resolve(__dirname, 'src/keyboard.svg'),
+					to: path.resolve(__dirname, 'dist')
+				},
+			],
 		}),
 	],
 	module: {
